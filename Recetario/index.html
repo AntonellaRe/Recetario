@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas de Cocina</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Recetas de Cocina</h1>
+    </header>
+    <main>
+        <section id="recipes-list">
+            <h2>Lista de Recetas</h2>
+            <ul>
+                <li onclick="showRecipe('alfajores')">
+                    <img src="images/alfajores.jpg" alt="Alfajores de Maicena">
+                    Alfajores de Maicena
+                </li>
+                <li onclick="showRecipe('bizcochuelo')">
+                    <img src="images/bizcochuelo.jpg" alt="Bizcochuelo">
+                    Bizcochuelo
+                </li>
+                <li onclick="showRecipe('facturas')">
+                    <img src="images/facturas.jpg" alt="Facturas">
+                    Facturas
+                </li>
+            </ul>
+        </section>
+        <section id="recipe-details" class="hidden">
+            <h2>Detalle de la Receta</h2>
+            <div id="recipe-content"></div>
+            <button onclick="hideRecipe()">Volver</button>
+        </section>
+    </main>
+    <script src="Recetas.js"></script>
+</body>
+</html>
